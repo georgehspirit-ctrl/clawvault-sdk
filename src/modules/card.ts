@@ -18,4 +18,14 @@ export class Card {
   async check(params: CardCheckRequest): Promise<CardCheckResult> {
     return this.http.request<CardCheckResult>('POST', '/v1/card/check', params);
   }
+
+  /** Get a card transaction by ID */
+  async getTransaction(id: string): Promise<any> {
+    return this.http.request<any>('GET', `/v1/card/transactions/${id}`);
+  }
+
+  /** List card transactions */
+  async listTransactions(limit = 20): Promise<any> {
+    return this.http.request<any>('GET', `/v1/card/transactions?limit=${limit}`);
+  }
 }

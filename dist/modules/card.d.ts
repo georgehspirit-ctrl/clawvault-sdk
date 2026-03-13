@@ -9,5 +9,9 @@ export declare class Card {
     balance(): Promise<CardBalance>;
     /** Check if a purchase would be allowed */
     check(params: CardCheckRequest): Promise<CardCheckResult>;
+    /** Get a card transaction by ID */
+    getTransaction(id: string): Promise<any>;
+    /** List card transactions */
+    listTransactions(limit?: number): Promise<any>;
 }
 //# sourceMappingURL=card.d.ts.map

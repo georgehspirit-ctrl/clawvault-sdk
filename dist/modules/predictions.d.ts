@@ -17,5 +17,7 @@ export declare class Predictions {
     positions(): Promise<PredictionPosition[]>;
     /** Check prediction wallet status (exists, KYC, balance) */
     wallet(): Promise<PredictionWallet>;
+    /** List prediction market categories */
+    categories(): Promise<string[]>;
 }
 //# sourceMappingURL=predictions.d.ts.map

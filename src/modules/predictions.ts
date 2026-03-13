@@ -47,4 +47,9 @@ export class Predictions {
   async wallet(): Promise<PredictionWallet> {
     return this.http.request<PredictionWallet>('GET', '/v1/prediction/wallet');
   }
+
+  /** List prediction market categories */
+  async categories(): Promise<string[]> {
+    return this.http.request<string[]>('GET', '/v1/prediction/categories');
+  }
 }

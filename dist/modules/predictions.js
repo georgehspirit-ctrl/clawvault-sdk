@@ -41,5 +41,9 @@ export class Predictions {
     async wallet() {
         return this.http.request('GET', '/v1/prediction/wallet');
     }
+    /** List prediction market categories */
+    async categories() {
+        return this.http.request('GET', '/v1/prediction/categories');
+    }
 }
 //# sourceMappingURL=predictions.js.map
