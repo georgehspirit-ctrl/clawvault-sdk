@@ -1,17 +1,17 @@
-# @clawvault/sdk
+# clawvault-sdk
 
 TypeScript SDK for the [ClawVault](https://clawvault.cc) API — security middleware for AI agents handling money.
 
 ## Install
 
 ```bash
-npm install @clawvault/sdk
+npm install clawvault-sdk
 ```
 
 ## Quick Start
 
 ```typescript
-import { ClawVault } from '@clawvault/sdk';
+import { ClawVault } from 'clawvault-sdk';
 
 // Partner key — onboard agents
 const cv = new ClawVault({ apiKey: 'cv_partner_xxx' });
@@ -60,7 +60,7 @@ Base, Ethereum, Arbitrum, Polygon, BNB Chain, Solana — all gasless.
 ## Error Handling
 
 ```typescript
-import { ClawVault, ClawVaultError } from '@clawvault/sdk';
+import { ClawVault, ClawVaultError } from 'clawvault-sdk';
 
 try {
   await cv.payments.request({ ... });
