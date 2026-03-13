@@ -1,0 +1,4 @@
+export { ClawVault } from './client.js';
+export { ClawVaultError, ErrorCode } from './errors.js';
+export type { ClawVaultConfig, PaymentRequest, Payment, PaymentCheckRequest, PaymentCheckResult, PaymentList, Vault, VaultBalance, TokenBalance, VaultCreateRequest, VaultCreateResult, WithdrawRequest, WithdrawResult, SwapQuoteRequest, SwapQuoteResult, SwapRequest, SwapResult, PredictionMarket, PredictionMarketsQuery, PredictionTradeRequest, PredictionTradeResult, PredictionPosition, PredictionWallet, CardPurchaseRequest, CardPurchaseResult, CardBalance, CardCheckRequest, CardCheckResult, Rules, RulesUpdate, Agent, GoatAction, GoatExecuteRequest, GoatExecuteResult, PartnerOnboardRequest, PartnerOnboardResult, PartnerAgent, PartnerAgentDetail, PartnerAgentList, PartnerUsage, } from './types.js';
+//# sourceMappingURL=index.d.ts.map

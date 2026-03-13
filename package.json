@@ -1,0 +1,47 @@
+{
+  "name": "@clawvault/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for the ClawVault API — security middleware for AI agents",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "clawvault",
+    "ai-agents",
+    "wallet",
+    "security",
+    "sdk",
+    "solana",
+    "evm",
+    "payments"
+  ],
+  "author": "ClawVault",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/georgehspirit-ctrl/clawvault-sdk"
+  },
+  "homepage": "https://clawvault.cc/docs",
+  "bugs": {
+    "url": "https://github.com/georgehspirit-ctrl/clawvault-sdk/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
