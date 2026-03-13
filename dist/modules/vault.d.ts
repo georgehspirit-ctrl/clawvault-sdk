@@ -5,6 +5,8 @@ export declare class VaultModule {
     constructor(http: HttpClient);
     /** Get all vaults for the authenticated user */
     get(): Promise<Vault[]>;
+    /** Alias for get() */
+    list(): Promise<Vault[]>;
     /** Create a new vault */
     create(params?: VaultCreateRequest): Promise<VaultCreateResult>;
     /** Get balance for a specific vault address */

@@ -9,6 +9,11 @@ export class VaultModule {
     return this.http.request<Vault[]>('GET', '/v1/vaults');
   }
 
+  /** Alias for get() */
+  async list(): Promise<Vault[]> {
+    return this.get();
+  }
+
   /** Create a new vault */
   async create(params?: VaultCreateRequest): Promise<VaultCreateResult> {
     return this.http.request<VaultCreateResult>('POST', '/v1/vault/create', params || {});

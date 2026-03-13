@@ -7,6 +7,10 @@ export class VaultModule {
     async get() {
         return this.http.request('GET', '/v1/vaults');
     }
+    /** Alias for get() */
+    async list() {
+        return this.get();
+    }
     /** Create a new vault */
     async create(params) {
         return this.http.request('POST', '/v1/vault/create', params || {});
