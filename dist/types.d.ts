@@ -27,7 +27,12 @@ export interface PaymentCheckResult {
     autoApprove: boolean;
     reasons?: string[];
 }
+export interface PaymentListQuery {
+    limit?: number;
+    status?: string;
+}
 export interface PaymentList {
+    items: Payment[];
     payments: Payment[];
     total: number;
 }

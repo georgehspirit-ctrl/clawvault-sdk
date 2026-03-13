@@ -33,8 +33,14 @@ export interface PaymentCheckResult {
   reasons?: string[];
 }
 
+export interface PaymentListQuery {
+  limit?: number;
+  status?: string;
+}
+
 export interface PaymentList {
-  payments: Payment[];
+  items: Payment[];
+  payments: Payment[]; // alias for items
   total: number;
 }
 
